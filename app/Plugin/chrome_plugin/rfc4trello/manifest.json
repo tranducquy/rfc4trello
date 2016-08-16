@@ -1,0 +1,19 @@
+{
+	"name" : "RFC For Trello",
+	"version" : "0.1",
+	"manifest_version" : 2,
+	"description" : "RFCモデルChrome Plugin",
+	"icons": {
+		"16": "images/icon16.png",
+		"48": "images/icon48.png",
+		"128": "images/icon128.png"
+	},
+	"content_scripts" : [
+	{
+		"matches" : ["https://trello.com/*"],
+		 "js" : ["libs/jquery-1.11.1.min.js", "app.js", "help.js"],
+		 "css" : ["css/style.css", "css/colors.css"]
+	 }
+	],
+	"permissions": ["tabs", "http://*/*","https://*/*"]
+}
